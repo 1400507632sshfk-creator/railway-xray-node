@@ -1,0 +1,1 @@
+{"inbounds":[{"port":"__PORT__","protocol":"vless","settings":{"clients":[{"flow":"","id":"__UUID__"}],"decryption":"none"},"streamSettings":{"network":"ws","wsSettings":{"path":"/tk-rail"}}}],"log":{"loglevel":"warning"},"outbounds":[{"protocol":"freedom","tag":"direct"}]}
