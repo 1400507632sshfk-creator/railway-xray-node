@@ -1,0 +1,30 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+  - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD-Railway"
+    type: vless
+    server: railway-xray-node-production-789d.up.railway.app
+    port: 443
+    uuid: 1bb7d410-5673-43d3-84c2-df4aa6d142a9
+    network: ws
+    tls: true
+    udp: true
+    sni: railway-xray-node-production-789d.up.railway.app
+    ws-opts:
+      path: /tk-rail
+      headers:
+        Host: railway-xray-node-production-789d.up.railway.app
+
+proxy-groups:
+  - name: "\U0001F680 \u8282\u70B9\u9009\u62E9"
+    type: select
+    proxies:
+      - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD-Railway"
+
+rules:
+  - MATCH,\U0001F680 \u8282\u70B9\u9009\u62E9
