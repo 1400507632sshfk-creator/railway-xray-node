@@ -1,0 +1,14 @@
+proxies:
+  - name: Railway-US
+    type: vless
+    server: railway-xray-node-production-789d.up.railway.app
+    port: 443
+    uuid: 1bb7d410-5673-43d3-84c2-df4aa6d142a9
+    network: ws
+    tls: true
+    udp: true
+    sni: railway-xray-node-production-789d.up.railway.app
+    ws-opts:
+      path: /tk-rail
+      headers:
+        Host: railway-xray-node-production-789d.up.railway.app
