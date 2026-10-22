@@ -10,7 +10,7 @@ proxies:
     type: vless
     server: railway-xray-node-production-789d.up.railway.app
     port: 443
-    uuid: 1bb7d410-5673-43d3-84c2-df4aa6d142a9
+    uuid: b0f443f9-6441-4c76-9dc0-2d1666aea35e
     network: ws
     tls: true
     udp: true
